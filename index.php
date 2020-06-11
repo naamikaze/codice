@@ -16,12 +16,7 @@
             <li><h2>Melon</h2></li>
         </header>
         <h1>Titulo 1</h1>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos labore ad reiciendis quibusdam ab, sint deserunt quasi facere excepturi. Labore, at corrupti illo porro enim unde nam maiores inventore laboriosam?</p>
-        <p>pito</p>
-        <h1>HOLA PRIMOO </h1>
-        <p>pruebarda</p>
-        <p>Nahuel Roggero tonto</p>
-        <p>exijo respeto por favor</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi tempora deleniti nobis aperiam veniam magnam, quisquam explicabo libero ipsum sit temporibus error assumenda cupiditate. Porro, veritatis reprehenderit. Asperiores quis voluptates eaque similique odit saepe quas adipisci animi rerum quaerat? Nesciunt voluptatum sit illo velit officia quam inventore nemo nostrum. Dolor assumenda laudantium quod numquam. Dolorum ut commodi reiciendis adipisci, voluptas unde, obcaecati qui facilis nemo accusamus excepturi voluptatum totam nam cupiditate culpa mollitia id architecto sed nesciunt autem est aliquid at. Accusamus ex nemo blanditiis ipsum dolore, praesentium explicabo pariatur culpa expedita ducimus nisi, placeat corrupti commodi maiores hic voluptatem.</p>
     </div>
 </body>
 </html>
