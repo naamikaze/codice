@@ -17,6 +17,8 @@
         </header>
         <h1>Titulo 1</h1>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos labore ad reiciendis quibusdam ab, sint deserunt quasi facere excepturi. Labore, at corrupti illo porro enim unde nam maiores inventore laboriosam?</p>
+        <p>pito</p>
+        <h1>HOLA PRIMOO</h1>
     </div>
 </body>
 </html>
