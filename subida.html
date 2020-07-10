@@ -14,7 +14,11 @@
 <!-- Ingreso de datos  -->
     <div class="container">
         <h1>Subida de Archivos</h1>
-        <label>Seleccione el archivo a subir *insertar insercion de archivos xD*</label><br><br>
+        <label>Seleccione el archivo a subir</label><br>
+            <form method="post" action="subir.php" enctype="multipart/form_data">   <!--averiguar en dónde coño subir el archivo ._.xD!-->
+                <input type="file" name="archivo" id="archivo"><br>
+            </form><br>
+
         <label for="">Ingrese el nombre del archivo</label><br/>
         <input name="" type="text" value="" id="nombre" class="form-control" /><br/>
         <label>Descripción del archivo:</label><br><br>
