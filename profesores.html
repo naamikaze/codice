@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <title>Proyecto Melon - Inicio</title>
+    </head>
+    <body>
+        <div class="container">
+            <h2>Registro Profesores</h2>
+            <form action="profesores.php">
+                <label for="">Ingrese un nombre</label>
+                <input name="" type="text" value="" id="nombre" />
+                <label for="">Ingrese un apellido</label>
+                <input name="" type="text" value="" id="apellido" />
+                <button id="cargar">Subir Datos</button>
+            </form>
+        </div>
+    </body>
+</html>
+<script>
+
+ document.getElementById('cargar').onclick = function(){
+
+     var nombre = document.getElementById('nombre').value;
+     var apellido = document.getElementById('apellido').value;
+
+     $.post('profesores.php', {nombre:nombre , apellido:apellido})};
+
+</script>
