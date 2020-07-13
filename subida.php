@@ -1,3 +1,18 @@
+<?php
+    session_start();
+
+    if ( isset( $_SESSION['user_id'] ) ) {
+       // ACA PUEDO HACER ALGO SI ESTA LOGUEADO !
+        include('librerias.html');
+         echo $_SESSION['user_id'];
+    } else {
+       echo $_SESSION['user_id'];
+        header("Location: index.php");
+    }
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
