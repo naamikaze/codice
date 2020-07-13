@@ -61,6 +61,7 @@
 <form action="cerrar_sesion.php" method="post">
 <button class="btn btn-danger" type="submit" >CERRAR SESION</button>
 </form>
+<a href='inicio.php'>Atras</a>
     </div>
 
 

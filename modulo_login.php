@@ -13,7 +13,7 @@ if ( ! empty( $_POST ) ) {
         if(!empty($resultado) && mysqli_num_rows($resultado) > 0){
             session_start();
             $_SESSION['user_id'] = $res[0]['pk_usuario'];
-            header("Location: subida.php");
+            header("Location: inicio.php");
 
         }else
         {

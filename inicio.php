@@ -22,5 +22,9 @@
          <h2>Bienvenido <?php echo $_SESSION['user_id']; ?></h2>
          <p>¿Qué desea hacer?</p>
          <a href="subida.php"><button>Subir Archivos</button></a>
+<form action="cerrar_sesion.php" method="post">
+<button class="btn btn-danger" type="submit" >CERRAR SESION</button>
+</form>
+
      </body>
 </html>
