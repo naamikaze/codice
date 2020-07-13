@@ -1,13 +1,14 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.2
+-- version 4.8.5
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 10-07-2020 a las 22:26:52
--- Versión del servidor: 10.4.13-MariaDB
--- Versión de PHP: 7.4.7
+-- Tiempo de generación: 13-07-2020 a las 18:39:43
+-- Versión del servidor: 10.1.40-MariaDB
+-- Versión de PHP: 7.3.5
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -41,8 +42,7 @@ CREATE TABLE `archivos` (
 
 INSERT INTO `archivos` (`id`, `nombre`, `desc`, `materia`, `curso`) VALUES
 (1, 'sex', 'asd', '3', '2'),
-(2, 'sex', 'asd', '3', '2'),
-(3, 'aaa', 'asdasd', '1', '1');
+(2, 'sex', 'asd', '3', '2');
 
 -- --------------------------------------------------------
 
@@ -51,24 +51,17 @@ INSERT INTO `archivos` (`id`, `nombre`, `desc`, `materia`, `curso`) VALUES
 --
 
 CREATE TABLE `profesores` (
-  `id` int(255) NOT NULL,
-  `nombre` varchar(255) NOT NULL,
-  `apellido` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+  `pk_profes` int(255) NOT NULL,
+  `usuario` varchar(255) NOT NULL,
+  `contra` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Volcado de datos para la tabla `profesores`
 --
 
-INSERT INTO `profesores` (`id`, `nombre`, `apellido`) VALUES
-(1, 'asd', 'da'),
-(2, '', ''),
-(3, 'b', 'aa'),
-(4, '', ''),
-(5, 'owowowo', 'uwuwuwu'),
-(6, '', ''),
-(7, 'aaaydios', 'mio'),
-(8, '', '');
+INSERT INTO `profesores` (`pk_profes`, `usuario`, `contra`) VALUES
+(1, 'jorge', 'nitales');
 
 --
 -- Índices para tablas volcadas
@@ -84,7 +77,7 @@ ALTER TABLE `archivos`
 -- Indices de la tabla `profesores`
 --
 ALTER TABLE `profesores`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`pk_profes`);
 
 --
 -- AUTO_INCREMENT de las tablas volcadas
@@ -94,13 +87,13 @@ ALTER TABLE `profesores`
 -- AUTO_INCREMENT de la tabla `archivos`
 --
 ALTER TABLE `archivos`
-  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT de la tabla `profesores`
 --
 ALTER TABLE `profesores`
-  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `pk_profes` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
