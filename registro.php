@@ -38,6 +38,7 @@
         // Se mandan las variables de JavaScript al archivo php
         $.post('modulo_registro.php', {nombre:nombre , apellido:apellido , fdenaci:fdenaci , dni:dni , usuario:usuario , contra:contra});
 
+        //Se ejecuta una alerta de SweetAlert
         Swal.fire(
         'Todo Listo!',
         'Bienvenido a Códice',

@@ -6,23 +6,23 @@
 if ( ! empty( $_POST ) ) {
     if ( isset( $_POST['usuario'] ) && isset( $_POST['contra'] ) ) {
         
-        $query = "SELECT pk_alumnos , usuario , contra from alumnos where usuario = '".$_POST['usuario']."' and contra = '".$_POST['contra']."' ";  
+        $query = "SELECT pk_profesores , usuario , contra from profesores where usuario = '".$_POST['usuario']."' and contra = '".$_POST['contra']."' ";  
     
         $resultado = mysqli_query($conexion,$query);
         $res = mysqli_fetch_array($resultado);
         if(!empty($resultado) && mysqli_num_rows($resultado) > 0){
             session_start();
-            $_SESSION['user_id'] = $res[0]['pk_alumnos'];
-            header("Location: pagina.php");
+            $_SESSION['user_id'] = $res[0]['pk_profesores'];
+            header("Location: pagina_profesores.php");
 
         }else
         {
-            header("Location: login.php");
+            header("Location: login_profesores.php");
         }
     	
     }else
     {
-        header("Location: login.php");
+        header("Location: login_profesores.php");
     }
 }
 ?>

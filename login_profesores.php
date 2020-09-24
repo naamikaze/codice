@@ -12,7 +12,7 @@ include('librerias.html')
 </head>
 <body>
 
-    <form action="modulo_login.php" method="post">
+    <form action="modulo-login-profesores.php" method="post">
 
         <input type="text" name="usuario" id="usuario" placeholder="Ingrese su nombre de usuario" required>
         <input type="password" name="contra" id="contra" placeholder="Ingrese su contraseña" required>
