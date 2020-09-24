@@ -4,6 +4,7 @@
     <?php
     include('librerias.html');
     ?>
+    <script src="js/jquery.min.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro</title>
@@ -24,20 +25,21 @@
     document.getElementById('cargar').onclick = function(){
 
         //Los id de los input se convierten en variables de JavaScript        
-        var nombre = 'joaco bayerri';
+        var nombre = $('#nombre').val();
         var apellido = $('#apellido').val();
         var fdenaci = $('#fdenaci').val();
         var usuario = $('#usuario').val();
         var contra = $('#contra').val();
 
-        console.log($nombre)
+        console.log(nombre)            
 
+        // Se mandan las variables de JavaScript al archivo php
         $.post('modulo_registro.php', {nombre:nombre , apellido:apellido , fdenaci:fdenaci , usuario:usuario , contra:contra});
 
         Swal.fire(
-  'Todo Listo!',
-  'Bienvenido a Códice',
-  'Success'
-)
+        'Todo Listo!',
+        'Bienvenido a Códice',
+        'success'
+        )
     }
 </script>
