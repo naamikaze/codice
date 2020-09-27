@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 24-09-2020 a las 01:29:08
+-- Tiempo de generación: 25-09-2020 a las 18:52:05
 -- Versión del servidor: 10.1.40-MariaDB
 -- Versión de PHP: 7.3.5
 
@@ -35,9 +35,20 @@ CREATE TABLE `alumnos` (
   `nombre` varchar(255) NOT NULL,
   `apellido` varchar(255) NOT NULL,
   `dni` int(9) NOT NULL,
-  `fnacimiento` datetime(6) NOT NULL,
-  `fk_curso` smallint(6) NOT NULL
+  `fnacimiento` varchar(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `alumnos`
+--
+
+INSERT INTO `alumnos` (`pk_alumnos`, `usuario`, `contra`, `nombre`, `apellido`, `dni`, `fnacimiento`) VALUES
+(1, 'tumadre123', 'pipipopo', 'tumadre', 'jorgenitales', 0, '2020-09-20 '),
+(2, 'tumadre123dsd', 'pipipopo123', 'tumadreaaa', 'jorgenitalesaa', 0, '2020-09-08 '),
+(3, 'tumadre123dsd', '123123', 'tumadreaaa', 'jorgenitalesaa', 0, '2020-09-18 '),
+(4, 'tumadre123dsd', '123123123', 'tumadreaaa', 'jorgenitalesaa', 0, '2020-09-18'),
+(5, 'dasdasdasd', 'asdasd', 'tumadreaaa', 'jorgenitalesaa', 123123, '2020-09-18'),
+(6, 'asd', '123', 'dasd', '123', 3333, '2020-09-10');
 
 -- --------------------------------------------------------
 
@@ -93,8 +104,16 @@ CREATE TABLE `profesores` (
   `nombre` varchar(30) NOT NULL,
   `apellido` varchar(30) NOT NULL,
   `dni` int(9) NOT NULL,
-  `fnacimiento` datetime(6) NOT NULL
+  `fnacimiento` varchar(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `profesores`
+--
+
+INSERT INTO `profesores` (`pk_profesores`, `usuario`, `contra`, `nombre`, `apellido`, `dni`, `fnacimiento`) VALUES
+(2, 'profe123', 'megustalapapa', 'Juan', 'Perez', 44932121, '13-02-2001'),
+(3, 'dsa', '123', 'erensto salvado', 'salvadoernesto', 123123, '12/01/2002');
 
 --
 -- Índices para tablas volcadas
@@ -138,7 +157,7 @@ ALTER TABLE `profesores`
 -- AUTO_INCREMENT de la tabla `alumnos`
 --
 ALTER TABLE `alumnos`
-  MODIFY `pk_alumnos` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `pk_alumnos` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT de la tabla `archivos`
@@ -162,7 +181,7 @@ ALTER TABLE `materias`
 -- AUTO_INCREMENT de la tabla `profesores`
 --
 ALTER TABLE `profesores`
-  MODIFY `pk_profesores` smallint(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `pk_profesores` smallint(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
