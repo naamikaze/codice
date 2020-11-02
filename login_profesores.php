@@ -19,6 +19,8 @@ include('librerias.html')
         <input type="submit" value="Iniciar Sesion">
     </form>
 
-    
 </body>
 </html>
+<script>
+
+</script>

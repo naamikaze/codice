@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <?php 
 include('librerias.html')
@@ -10,6 +11,7 @@ include('librerias.html')
 
     <title>Login</title>
 </head>
+
 <body>
 
     <form action="modulo_login.php" method="post">
@@ -19,6 +21,7 @@ include('librerias.html')
         <input type="submit" value="Iniciar Sesion">
     </form>
 
-    
+
 </body>
+
 </html>
