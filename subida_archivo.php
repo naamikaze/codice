@@ -4,8 +4,7 @@
     if ( isset( $_SESSION['user_id'] ) ) {
        // ACA PUEDO HACER ALGO SI ESTA LOGUEADO !
         include('librerias.html');
-    } else {
-       
+    } else { 
         header("Location: login.php");
     }   
 
@@ -31,16 +30,16 @@
     <div>
     <span>Elija un archivo</span>
     <br>
-    <input id="archivo" type="file" name="archivo" required>
-    </div>
+    <input id="archivo" REQUIRED type="file" name="archivo" >
+
 <br>
 
         <label>Ingrese el título del archivo</label><br>
-        <input type="text" id="titulo" name="titulo" placeholder="Ingresar título"><br><br>
+        <input type="text"  REQUIRED id="titulo" name="titulo" placeholder="Ingresar título"><br><br>
 
 
         <label>Descripción del archivo</label><br>
-        <textarea rows="5" cols="100" name="desc" placeholder="Redacte una descripción sobre el archivo" id="descripcion"></textarea><br><br>
+        <textarea rows="5"  REQUIRED cols="100" name="desc" placeholder="Redacte una descripción sobre el archivo" id="descripcion"></textarea><br><br>
 
         <label>Seleccione la materia</label><br>
         <select class="form-control" id="materia" name="materia">

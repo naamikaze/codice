@@ -7,10 +7,10 @@ $desc = $_POST['desc'];
 $materia = $_POST['materia']; 
 $curso = $_POST['curso']; 
 
+//$_SESSION['userID'] = $profesor;
 
-$profesor= "SELECT pk_profesores FROM profesores WHERE nombre AND apellido = '$profesor'";
 
-$query = "INSERT INTO `archivos`( `nombre`, `descripcion`, `archivo`, `fk_materia`, `fk_curso`, `fk_profesor`) VALUES ('".$titulo."', '".$desc."' , '".$archivo."' , '".$materia."' , '".$curso."' , '".$profesor."')";
+$query = "INSERT INTO `archivos`( `nombre`, `descripcion`, `archivo`, `fk_materia`, `fk_curso`) VALUES ('".$titulo."', '".$desc."' , '".$archivo."' , '".$materia."' , '".$curso."')";
 
 mysqli_query($conexion,$query);
 
