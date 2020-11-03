@@ -37,17 +37,17 @@
 			    include('conexion.php');
 			    $query = "SELECT * FROM archivos";
 			    $res = mysqli_query($conexion,$query);
-			    while ($row = mysqli_fetch_row($res)){
+			    while ($row = $res->fetch_assoc()){
 
 			?>    
 			<!--  asd --!>
 			<tr>
 			<td><?php echo $row['id']; ?></td>
-			<td><?php echo $row['titulo']; ?></td>
+			<td><?php echo $row['nombre']; ?></td>
 			<td><?php echo base64_encode($row['archivo']); ?></td>
-			<td><?php echo $row['desc']; ?></td>
-			<td><?php echo $row['materia']; ?></td>
-			<td><?php echo $row['Curso']; ?></td>
+			<td><?php echo $row['descripcion']; ?></td>
+			<td><?php echo $row['fk_materia']; ?></td>
+			<td><?php echo $row['fk_curso']; ?></td>
 			</tr>
 			<?php } ?>
 		    </tbody>
