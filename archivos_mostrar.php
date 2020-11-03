@@ -35,7 +35,7 @@
 		    <tbody>
 			<?php
 			    include('conexion.php');
-			    $query "SELECT * FROM archivos";
+			    $query = "SELECT * FROM archivos";
 			    $res = mysqli_query($conexion,$query);
 			    while ($row = mysqli_fetch_row($res)){
 
@@ -48,7 +48,6 @@
 			<td><?php echo $row['desc']; ?></td>
 			<td><?php echo $row['materia']; ?></td>
 			<td><?php echo $row['Curso']; ?></td>
-			<!-- <td><?//php echo $row['Curso'] ?></td> --!>
 			</tr>
 			<?php } ?>
 		    </tbody>
