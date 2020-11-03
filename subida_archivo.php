@@ -3,6 +3,7 @@
 
     if ( isset( $_SESSION['user_id'] ) ) {
        // ACA PUEDO HACER ALGO SI ESTA LOGUEADO !
+        include('librerias.html');
     } else {
        
         header("Location: login.php");
