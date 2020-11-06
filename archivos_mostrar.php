@@ -44,7 +44,7 @@
 			<tr>
 			<td><?php echo $row['id']; ?></td>
 			<td><?php echo $row['nombre']; ?></td>
-			<td><?php echo base64_encode($row['archivo']); ?></td>
+			<td><?php echo $row['ruta'] ?></td>
 			<td><?php echo $row['descripcion']; ?></td>
 			<td><?php echo $row['fk_materia']; ?></td>
 			<td><?php echo $row['fk_curso']; ?></td>
