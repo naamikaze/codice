@@ -1,5 +1,7 @@
+
 <?php
 include('conexion.php');
+
 
 $ruta = "upload/";
 $nombrefinal = trim ($_FILES['archivo']['name']); //Se eliminan los espacios en blanco
@@ -8,6 +10,8 @@ $upload = $ruta . $nombrefinal;
 
 
 move_uploaded_file($_FILES['archivo']['tmp_name'], $upload);
+
+$id = $_REQUEST['id'];
 
 $titulo = $_POST['titulo']; 
 $desc = $_POST['desc']; 
@@ -18,16 +22,18 @@ $size = $_FILES['archivo']['size'];
 
 //$_SESSION['userID'] = $profesor;
 
-$query = "INSERT INTO `archivos`( `nombre`, `descripcion`, `ruta`, `tipo`, `size`, `fk_materia`, `fk_curso`) VALUES ('".$titulo."', '".$desc."' , '".$nombrefinal."' , '".$tipo."' , '".$size."' , '".$materia."' , '".$curso."')";
+$query = "UPDATE archivos SET nombre='$titulo', descripcion='$desc', ruta='$nombrefinal', tipo='$tipo', size='$size', fk_materia='$materia', fk_curso='$curso' WHERE id = '$id'";
 
-$resu = mysqli_query($conexion,$query);
+$resultado = mysqli_query($conexion,$query);
 
-if($resu){
-    header('Location: archivos_mostrar.php');
+if($resultado){
+    echo 'Se modifico';
+
 }
-else{
-	echo "No se subió";
+
+else {
+	echo "No se modificó";
 }
+
     
 ?>
-

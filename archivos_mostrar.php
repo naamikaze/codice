@@ -1,14 +1,14 @@
 <?php
+    include('librerias.html');
     session_start();
 
     if ( isset( $_SESSION['user_id'] ) ) {
        // ACA PUEDO HACER ALGO SI ESTA LOGUEADO !
         include('librerias.html');
     } else { 
-        header("Location: login.php");
+        header("Location: login_profesores.php");
     }   
 
-    
 ?>
 
 <!DOCTYPE html>
@@ -16,10 +16,12 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+       <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Archivos subidos</title>
 	<body>
 	    <div class="container">
+		<a href="subida_archivo.php"><button class='btn btn-success'>Subir Nuevo</button></a>
 	    	<table border="1">
 		    <thead>
 			<tr>
@@ -50,16 +52,32 @@
 			<td><?php echo $row['id']; ?></td>
 			<td><?php echo $row['nombre']; ?></td>
 			<td><?php echo $row['tipo']; ?></td>
-			<td><a href="download.php">File Name</a></td>
+			<td><a href="<?php $row['ruta'] ?>">File Name</a></td>
 			<td><?php echo $row['size']; ?></td>
 			<td><?php echo $row['descripcion']; ?></td>
 			<td><?php echo $row['fk_materia']; ?></td>
 			<td><?php echo $row['fk_curso']; ?></td>
-			</tr>
+			<td><a href="modificar.php?id=<?php echo $row['id'] ?>">Modificar</a></td>
+			<td><a href="eliminar.php?id=<?php echo $row ['id']?>">Eliminar</a></td>
+	</tr>
 			<?php } ?>
 		    </tbody>
 	    	</table>
+		<br>
+
 	    </div>
 	</body>
     </head>
 </html>
+
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+
