@@ -34,12 +34,12 @@
 			    <th>Descripción</th>
 			    <th>Materia</th>
 			    <th>Curso</th>
-			    <!-- <th>Profesor</th> --!>
+			    <!-- <th>Profesor</th> -->
 			</tr>
 		    </thead>
 		    <tbody>
 
-			<!-- Acá llamo a la bd !-->
+			<!-- Acá llamo a la bd -->
 			<?php
 			    include('conexion.php');
 			    $query = "SELECT * FROM archivos";
@@ -47,7 +47,7 @@
 			    while ($row = $res->fetch_assoc()){
 			?>    
 
-			<!--  Acá muestro el contenido de la bd --!>
+			<!--  Acá muestro el contenido de la bd -->
 			<tr>
 			<td><?php echo $row['id']; ?></td>
 			<td><?php echo $row['nombre']; ?></td>
