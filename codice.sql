@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 07-11-2020 a las 20:18:08
+-- Tiempo de generación: 07-11-2020 a las 22:17:28
 -- Versión del servidor: 10.1.40-MariaDB
 -- Versión de PHP: 7.3.5
 
@@ -35,20 +35,21 @@ CREATE TABLE `alumnos` (
   `nombre` varchar(255) NOT NULL,
   `apellido` varchar(255) NOT NULL,
   `dni` int(9) NOT NULL,
-  `fnacimiento` varchar(11) NOT NULL
+  `fnacimiento` varchar(11) NOT NULL,
+  `fk_curso` smallint(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Volcado de datos para la tabla `alumnos`
 --
 
-INSERT INTO `alumnos` (`pk_alumnos`, `usuario`, `contra`, `nombre`, `apellido`, `dni`, `fnacimiento`) VALUES
-(1, 'tumadre123', 'pipipopo', 'tumadre', 'jorgenitales', 0, '2020-09-20 '),
-(2, 'tumadre123dsd', 'pipipopo123', 'tumadreaaa', 'jorgenitalesaa', 0, '2020-09-08 '),
-(3, 'tumadre123dsd', '123123', 'tumadreaaa', 'jorgenitalesaa', 0, '2020-09-18 '),
-(4, 'tumadre123dsd', '123123123', 'tumadreaaa', 'jorgenitalesaa', 0, '2020-09-18'),
-(5, 'dasdasdasd', 'asdasd', 'tumadreaaa', 'jorgenitalesaa', 123123, '2020-09-18'),
-(6, 'asd', '123', 'dasd', '123', 3333, '2020-09-10');
+INSERT INTO `alumnos` (`pk_alumnos`, `usuario`, `contra`, `nombre`, `apellido`, `dni`, `fnacimiento`, `fk_curso`) VALUES
+(1, 'tumadre123', 'pipipopo', 'tumadre', 'jorgenitales', 0, '2020-09-20 ', 0),
+(2, 'tumadre123dsd', 'pipipopo123', 'tumadreaaa', 'jorgenitalesaa', 0, '2020-09-08 ', 0),
+(3, 'tumadre123dsd', '123123', 'tumadreaaa', 'jorgenitalesaa', 0, '2020-09-18 ', 0),
+(4, 'tumadre123dsd', '123123123', 'tumadreaaa', 'jorgenitalesaa', 0, '2020-09-18', 0),
+(5, 'dasdasdasd', 'asdasd', 'tumadreaaa', 'jorgenitalesaa', 123123, '2020-09-18', 0),
+(6, 'asd', '123', 'dasd', '123', 3333, '2020-09-10', 0);
 
 -- --------------------------------------------------------
 
@@ -74,9 +75,11 @@ CREATE TABLE `archivos` (
 --
 
 INSERT INTO `archivos` (`id`, `nombre`, `descripcion`, `archivo`, `ruta`, `tipo`, `size`, `fk_materia`, `fk_curso`, `fk_profesor`) VALUES
-(1, 'asddddd123', 'asdasdasdddd', '', '6a45066f341e3d70cda152b04669d1e7.jpg', 'image/jpeg', 24708, 1, 2, 0),
 (2, 'asddddd123', 'asdasdasdddd', '', '6a45066f341e3d70cda152b04669d1e7.jpg', 'image/jpeg', 24708, 1, 2, 0),
-(3, 'asddddd123', 'asdasdasdddd', '', 'codice.sql', '', 0, 1, 2, 0);
+(3, '123123', 'asdasdasdasd', '', '335.jpg', 'image/jpeg', 22594, 2, 3, 0),
+(6, '123', 'ddda', '', '2f7.jpg', 'image/jpeg', 28337, 1, 2, 0),
+(7, 'panuel noyero', 'asdasd', '', '928d8a9a57515320068a2c339e88fd28.jpg', 'image/jpeg', 32001, 1, 2, 0),
+(23, 'aa', '12', '', 'bfef025b4ac8392ffd58a5623f8cd273(1).gif', 'image/gif', 373309, 1, 2, 0);
 
 -- --------------------------------------------------------
 
@@ -175,7 +178,7 @@ ALTER TABLE `alumnos`
 -- AUTO_INCREMENT de la tabla `archivos`
 --
 ALTER TABLE `archivos`
-  MODIFY `id` smallint(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` smallint(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
 
 --
 -- AUTO_INCREMENT de la tabla `curso`
