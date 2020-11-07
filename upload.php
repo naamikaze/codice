@@ -7,9 +7,7 @@ $nombrefinal = mb_ereg_replace(" ", "", $nombrefinal); //Sustituye los espacios 
 $upload = $ruta . $nombrefinal;
 
 
-if (move_uploaded_file($_FILES['archivo'][tmp_name], $upload)){
-
-
+move_uploaded_file($_FILES['archivo']['tmp_name'], $upload);
 
 $titulo = $_POST['titulo']; 
 $desc = $_POST['desc']; 
@@ -18,10 +16,10 @@ $curso = $_POST['curso'];
 
 //$_SESSION['userID'] = $profesor;
 
-$query = "INSERT INTO `archivos`( `nombre`, `descripcion`, `archivo`, `ruta`, `tipo`, `size`, `fk_materia`, `fk_curso`) VALUES ('".$titulo."', '".$desc."' , '".$archivo."' , '".$_FILES['archivo']['name']."' , '".$_FILES['archivo']['type']."' , '".$_FILES['archivo']['size']."' , '".$materia."' , '".$curso."')";
+$query = "INSERT INTO `archivos`( `nombre`, `descripcion`, `ruta`, `tipo`, `size`, `fk_materia`, `fk_curso`) VALUES ('".$titulo."', '".$desc."' , '".$nombrefinal."' , '".$_FILES['archivo']['type']."' , '".$_FILES['archivo']['size']."' , '".$materia."' , '".$curso."')";
 
 mysqli_query($conexion,$query);
-}
+
 
     
 ?>
