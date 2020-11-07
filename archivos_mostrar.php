@@ -47,6 +47,7 @@
 			    while ($row = $res->fetch_assoc()){
 			?>    
 
+			<!-- a !-->
 			<!--  Acá muestro el contenido de la bd --!>
 			<tr>
 			<td><?php echo $row['id']; ?></td>
