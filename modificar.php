@@ -28,6 +28,12 @@
                     </a>
                 </li>
                 <li>
+			<li>
+					<a href="archivos_mostrar.php" class="btn-sideBar-SubMenu">
+						<i class="zmdi zmdi-view-dashboard zmdi-hc-fw"></i> ARCHIVOS (Solo Profesores) 
+					</a>
+
+				</li>
                     <a href="archivos_mostrar.php" class="btn-sideBar-SubMenu">
                         <i class="zmdi zmdi-view-dashboard zmdi-hc-fw"></i> ARCHIVOS 
                     </a>

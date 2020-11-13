@@ -1,17 +1,4 @@
-<?php
-    session_start();
-
-    if ( isset( $_SESSION['user_id'] ) ) {
-       // ACA PUEDO HACER ALGO SI ESTA LOGUEADO !
-        include('librerias.html');
-    } else {
-       
-        header("Location: login_profesores.php");
-    }   
-
-    
-?>
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="es">
 <head>
 	<title>Inicio</title>
@@ -97,10 +84,9 @@
 			   <!-- <th class="text-center">ID</th> -->
 			    <th class="text-center">Título</th>
 			    <th class="text-center">Tipo de Archivo</th>
-			    <th class="text-center">Ruta del Archivo</th>
-			    <th class="text-center">Tamaño del archivo</th>
+			    <th class="text-center"></th>
+			    <th class="text-center">Tamaño del archivo (KB)</th>
 			    <th class="text-center">Descripción</th>
-			    <!--<th class="text-center">Materia</th>-->
 			    <th class="text-center">Curso</th>
 			   
 			    <!-- <th>Profesor</th> -->
@@ -131,13 +117,10 @@
 			<!-- <td><?php echo $row['id']; ?></td> -->
 			<td><?php echo $row['nombre']; ?></td>
 			<td><?php echo $row['tipo']; ?></td>
-			<td><a download href="upload/<?php echo $row['ruta'] ?>">Des</a></td>
+			<td><a download href="upload/<?php echo $row['ruta'] ?>">Descargar</a></td>
 			<td><?php echo $row['size']; ?></td>
 			<td><?php echo $row['descripcion']; ?></td>
-			<!--<td><?php echo $row['fk_materia']; ?></td>-->
 			<td><?php echo $row['fk_curso']; ?></td>
-			<td><a href="modificar.php?id=<?php echo $row['id'] ?>" class="btn btn-success btn-raised btn-sm"><i class="zmdi zmdi-refresh"></i> Modificar</a></td>
-			<td><a href="eliminar.php?id=<?php echo $row ['id']?>" class="btn btn-danger btn-raised btn-sm"><i class="zmdi zmdi-delete"></i> Eliminar</a></td>
 			</tr>
 			<?php } ?>
 		    </tbody>

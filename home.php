@@ -27,6 +27,12 @@
 				</li>
 				<li>
 					<a href="archivos_mostrar.php" class="btn-sideBar-SubMenu">
+						<i class="zmdi zmdi-view-dashboard zmdi-hc-fw"></i> ARCHIVOS (Solo Profesores) 
+					</a>
+
+				</li>
+				<li>
+					<a href="archivos.php" class="btn-sideBar-SubMenu">
 						<i class="zmdi zmdi-view-dashboard zmdi-hc-fw"></i> ARCHIVOS 
 					</a>
 
@@ -72,7 +78,7 @@
 		</div>
 		<div clss="full-box text-center" style="padding: 30px 10px;">
 
-			<a href="archivos_mostrar.php?materia=1"><article class="full-box tile">
+			<a href="archivos.php?materia=1"><article class="full-box tile">
 				<div class="full-box tile-title text-center text-titles text-uppercase">
 					MATEMATICAS
 				</div>
@@ -85,7 +91,7 @@
 				</div>
 			</article></a>
 
-			<a href="archivos_mostrar.php?materia=2"><article class="full-box tile">
+			<a href="archivos.php?materia=2"><article class="full-box tile">
 				<div class="full-box tile-title text-center text-titles text-uppercase">
 					HISTORIA
 				</div>
@@ -98,7 +104,7 @@
 				</div>
 			</article></a>
 
-			<a href="archivos_mostrar.php?materia=3"><article class="full-box tile">
+			<a href="archivos.php?materia=3"><article class="full-box tile">
 				<div class="full-box tile-title text-center text-titles text-uppercase">
 					P. DEL LENGUAJE
 				</div>
@@ -111,7 +117,7 @@
 				</div>
 			</article></a>
 
-			<a href="archivos_mostrar.php?materia=4"><article class="full-box tile">
+			<a href="archivos.php?materia=4"><article class="full-box tile">
 				<div class="full-box tile-title text-center text-titles text-uppercase">
 					GEOGRAFIA
 				</div>
@@ -124,7 +130,7 @@
 				</div>
 			</article></a>
 
-			<a href="archivos_mostrar.php?materia=5"><article class="full-box tile">
+			<a href="archivos.php?materia=5"><article class="full-box tile">
 				<div class="full-box tile-title text-center text-titles text-uppercase">
 					INGLES
 				</div>
@@ -137,7 +143,7 @@
 				</div>
 			</article></a>
 
-			<a href="archivos_mostrar.php?materia=6"><article class="full-box tile">
+			<a href="archivos.php?materia=6"><article class="full-box tile">
 				<div class="full-box tile-title text-center text-titles text-uppercase">
 				PROGRAMACION
 				</div>
@@ -150,7 +156,7 @@
 				</div>
 			</article></a>
 
-			<a href="archivos_mostrar.php?materia=7"><article class="full-box tile">
+			<a href="archivos.php?materia=7"><article class="full-box tile">
 				<div class="full-box tile-title text-center text-titles text-uppercase">
 					GEOGRAFIA
 				</div>
