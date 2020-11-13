@@ -75,6 +75,7 @@
 								<table class="table table-hover text-center ">
 			<thead>
 			<tr>
+<<<<<<< HEAD
 			   <!-- <th class="text-center">ID</th> -->
 			    <th class="text-center">Título</th>
 			    <th class="text-center">Tipo de Archivo</th>
@@ -84,6 +85,17 @@
 			    <!--<th class="text-center">Materia</th>-->
 			    <th class="text-center">Curso</th>
 			   
+=======
+			    <th>ID</th>
+			    <th>Título</th>
+			    <th>Descargar Archivo</th>
+			    <th>Ruta del Archivo</th>
+			    <th>Tipo de Archivo</th>
+			    <th>Tamaño del archivo</th>
+			    <th>Descripción</th>
+			    <th>Materia</th>
+			    <th>Curso</th>
+>>>>>>> 40051189b36bad4099a1cd621422c77bfced3254
 			    <!-- <th>Profesor</th> -->
 			</tr>
 		    </thead>
@@ -98,10 +110,13 @@
 			?>    
 
 			<!--  Acá muestro el contenido de la bd -->
+<<<<<<< HEAD
 
 			
 
 			<tbody>
+=======
+>>>>>>> 40051189b36bad4099a1cd621422c77bfced3254
 			<tr>
 			<!-- <td><?php echo $row['id']; ?></td> -->
 			<td><?php echo $row['nombre']; ?></td>
