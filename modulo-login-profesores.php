@@ -13,7 +13,7 @@ if ( ! empty( $_POST ) ) {
         if(!empty($resultado) && mysqli_num_rows($resultado) > 0){
             session_start();
             $_SESSION['user_id'] = $res[0]['pk_profesores'];
-            header("Location: pagina_profesores.php");
+            header("Location: archivos_mostrar.php");
 
         }else
         {
