@@ -52,7 +52,13 @@
 					</a>
 
 				</li>
-				
+			
+				<li>
+					<a href="materias.php" class="btn-sideBar-SubMenu">
+						<i class="zmdi zmdi-view-dashboard zmdi-hc-fw"></i> CERRAR SESION 
+					</a>
+
+				</li>	
 				
 				
 			</ul>
