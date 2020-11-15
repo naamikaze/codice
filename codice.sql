@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 07-11-2020 a las 22:17:28
+-- Tiempo de generación: 15-11-2020 a las 22:02:32
 -- Versión del servidor: 10.1.40-MariaDB
 -- Versión de PHP: 7.3.5
 
@@ -79,7 +79,9 @@ INSERT INTO `archivos` (`id`, `nombre`, `descripcion`, `archivo`, `ruta`, `tipo`
 (3, '123123', 'asdasdasdasd', '', '335.jpg', 'image/jpeg', 22594, 2, 3, 0),
 (6, '123', 'ddda', '', '2f7.jpg', 'image/jpeg', 28337, 1, 2, 0),
 (7, 'panuel noyero', 'asdasd', '', '928d8a9a57515320068a2c339e88fd28.jpg', 'image/jpeg', 32001, 1, 2, 0),
-(23, 'aa', '12', '', 'bfef025b4ac8392ffd58a5623f8cd273(1).gif', 'image/gif', 373309, 1, 2, 0);
+(23, 'aa', '12', '', 'bfef025b4ac8392ffd58a5623f8cd273(1).gif', 'image/gif', 373309, 1, 2, 0),
+(25, 'aaa', '123d', '', 'SensoresÃ¡nalogos.rar', 'application/octet-stream', 1998641, 2, 2, 0),
+(29, 'holajoaco', 'aaaaaaaaaaaa', '', 'GyroP.png', 'image/png', 289529, 6, 0, 0);
 
 -- --------------------------------------------------------
 
@@ -178,7 +180,7 @@ ALTER TABLE `alumnos`
 -- AUTO_INCREMENT de la tabla `archivos`
 --
 ALTER TABLE `archivos`
-  MODIFY `id` smallint(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
+  MODIFY `id` smallint(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
 
 --
 -- AUTO_INCREMENT de la tabla `curso`
