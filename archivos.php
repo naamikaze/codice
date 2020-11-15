@@ -26,24 +26,20 @@
 						<i class="zmdi zmdi-balance zmdi-hc-fw"></i> INICIO
 					</a>
 				</li>
-			<li>
-					<a href="archivos_mostrar.php" class="btn-sideBar-SubMenu">
-						<i class="zmdi zmdi-view-dashboard zmdi-hc-fw"></i> ARCHIVOS (Solo Profesores) 
-					</a>
-
-				</li>
+			
 				<li>
-					<a href="archivos_mostrar.php" class="btn-sideBar-SubMenu">
+					<a href="materias.php" class="btn-sideBar-SubMenu">
 						<i class="zmdi zmdi-view-dashboard zmdi-hc-fw"></i> ARCHIVOS 
 					</a>
 
 				</li>
 				<li>
 					<a href="login_profesores.php" class="btn-sideBar-SubMenu">
-						<i class="zmdi zmdi-account zmdi-hc-fw"></i> INICIAR SESION
+						<i class="zmdi zmdi-view-dashboard zmdi-hc-fw"></i> ARCHIVOS (Solo Profesores) 
 					</a>
-					
+
 				</li>
+				
 				
 				
 			</ul>

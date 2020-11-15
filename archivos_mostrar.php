@@ -39,24 +39,20 @@
 						<i class="zmdi zmdi-balance zmdi-hc-fw"></i> INICIO
 					</a>
 				</li>
-			<li>
-					<a href="archivos_mostrar.php" class="btn-sideBar-SubMenu">
-						<i class="zmdi zmdi-view-dashboard zmdi-hc-fw"></i> ARCHIVOS (Solo Profesores) 
-					</a>
-
-				</li>
+			
 				<li>
-					<a href="archivos_mostrar.php" class="btn-sideBar-SubMenu">
+					<a href="materias.php" class="btn-sideBar-SubMenu">
 						<i class="zmdi zmdi-view-dashboard zmdi-hc-fw"></i> ARCHIVOS 
 					</a>
 
 				</li>
 				<li>
 					<a href="login_profesores.php" class="btn-sideBar-SubMenu">
-						<i class="zmdi zmdi-account zmdi-hc-fw"></i> INICIAR SESION
+						<i class="zmdi zmdi-view-dashboard zmdi-hc-fw"></i> ARCHIVOS (Solo Profesores) 
 					</a>
-					
+
 				</li>
+				
 				
 				
 			</ul>
@@ -100,7 +96,7 @@
 			    <th class="text-center">Ruta del Archivo</th>
 			    <th class="text-center">Tamaño del archivo</th>
 			    <th class="text-center">Descripción</th>
-			    <!--<th class="text-center">Materia</th>-->
+			    <th class="text-center">Materia</th>
 			    <th class="text-center">Curso</th>
 			   
 			    <!-- <th>Profesor</th> -->
@@ -134,7 +130,7 @@
 			<td><a download href="upload/<?php echo $row['ruta'] ?>">Des</a></td>
 			<td><?php echo $row['size']; ?></td>
 			<td><?php echo $row['descripcion']; ?></td>
-			<!--<td><?php echo $row['fk_materia']; ?></td>-->
+			<td><?php echo $row['fk_materia']; ?></td>
 			<td><?php echo $row['fk_curso']; ?></td>
 			<td><a href="modificar.php?id=<?php echo $row['id'] ?>" class="btn btn-success btn-raised btn-sm"><i class="zmdi zmdi-refresh"></i> Modificar</a></td>
 			<td><a href="eliminar.php?id=<?php echo $row ['id']?>" class="btn btn-danger btn-raised btn-sm"><i class="zmdi zmdi-delete"></i> Eliminar</a></td>
