@@ -18,7 +18,7 @@ $size = $_FILES['archivo']['size'];
 
 //$_SESSION['userID'] = $profesor;
 
-$query = "INSERT INTO `archivos`( `nombre`, `descripcion`, `ruta`, `tipo`, `size`, `fk_materia`, `fk_curso`) VALUES ('".$titulo."', '".$desc."' , '".$nombrefinal."' , '".$tipo."' , '".$size."' , '".$materia."' , '".$curso."')";
+$query = "INSERT INTO `archivos`( `nombre`, `descripcion`, `ruta`, `tipo`, `size`, `fk_materia`) VALUES ('".$titulo."', '".$desc."' , '".$nombrefinal."' , '".$tipo."' , '".$size."' , '".$materia."')";
 
 $resu = mysqli_query($conexion,$query);
 

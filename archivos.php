@@ -1,7 +1,7 @@
 <<!DOCTYPE html>
 <html lang="es">
 <head>
-	<title>Archivos</title>
+	<title>Inicio</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
@@ -84,7 +84,6 @@
 			    <th class="text-center"></th>
 			    <th class="text-center">Tamaño del archivo (KB)</th>
 			    <th class="text-center">Descripción</th>
-			    <th class="text-center">Curso</th>
 			   
 			    <!-- <th>Profesor</th> -->
 			</tr>
@@ -117,7 +116,6 @@
 			<td><a download href="upload/<?php echo $row['ruta'] ?>">Descargar</a></td>
 			<td><?php echo $row['size']; ?></td>
 			<td><?php echo $row['descripcion']; ?></td>
-			<td><?php echo $row['fk_curso']; ?></td>
 			</tr>
 			<?php } ?>
 		    </tbody>

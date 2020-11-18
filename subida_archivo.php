@@ -149,7 +149,6 @@
 	   var nombre = document.getElementById('nombre').value;
 	   var desc = document.getElementById('desc').value;
 	   var materia = document.getElementById('materia').value;
-	   var curso = document.getElementById('curso').value;
 
        }
    </script>
