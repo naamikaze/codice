@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<title>Modificar Archivo</title>
     <?php
         include("librerias.html");
     ?>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="./css/main.css">
@@ -22,28 +24,24 @@
             
             <!-- SideBar Menu -->
             <ul class="list-unstyled full-box dashboard-sideBar-Menu">
-                <li>
-                    <a href="index.php">
-                        <i class="zmdi zmdi-balance zmdi-hc-fw"></i> INICIO
-                    </a>
+                <li> <a href="index.php"> <i class="zmdi zmdi-balance zmdi-hc-fw"></i> INICIO
+                                           </a>
                 </li>
-                <li>
-			<li>
-					<a href="archivos_mostrar.php" class="btn-sideBar-SubMenu">
-						<i class="zmdi zmdi-view-dashboard zmdi-hc-fw"></i> ARCHIVOS (Solo Profesores) 
-					</a>
-
 				</li>
-                    <a href="archivos_mostrar.php" class="btn-sideBar-SubMenu">
+                    <a href="materias.php" class="btn-sideBar-SubMenu">
                         <i class="zmdi zmdi-view-dashboard zmdi-hc-fw"></i> ARCHIVOS 
                     </a>
 
                 </li>
+			<li>
+					<a href="archivos_mostrar.php" class="btn-sideBar-SubMenu">
+						<i class="zmdi zmdi-layers"></i> ARCHIVOS (Solo Profesores) 
+					</a>
+
                 <li>
-                    <a href="login_profesores.php" class="btn-sideBar-SubMenu">
-                        <i class="zmdi zmdi-account zmdi-hc-fw"></i> INICIAR SESION
+                    <a href="cerrar_sesion.php" class="btn-sideBar-SubMenu">
+                        <i class="zmdi zmdi-close-circle"></i> CERRAR SESION 
                     </a>
-                    
                 </li>
                 
                 

@@ -1,9 +1,10 @@
 <<!DOCTYPE html>
 <html lang="es">
 <head>
-	<title>Inicio</title>
+	<title>Archivos</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="./css/main.css">
 	
 </head>
@@ -34,8 +35,8 @@
 
 				</li>
 				<li>
-					<a href="login_profesores.php" class="btn-sideBar-SubMenu">
-						<i class="zmdi zmdi-view-dashboard zmdi-hc-fw"></i> ARCHIVOS (Solo Profesores) 
+					<a href="archivos_mostrar.php" class="btn-sideBar-SubMenu">
+						<i class="zmdi zmdi-layers"></i> ARCHIVOS (Solo Profesores) 
 					</a>
 
 				</li>

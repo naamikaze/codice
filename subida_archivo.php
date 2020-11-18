@@ -1,11 +1,25 @@
+<?php
+    session_start();
 
+    if ( isset( $_SESSION['user_id'] ) ) {
+       // ACA PUEDO HACER ALGO SI ESTA LOGUEADO !
+        include('librerias.html');
+    } else {
+       
+        header("Location: login_profesores.php");
+    }   
+
+    
+?>
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<title>Subir un nuevo archivo</title>
     <?php
         include("librerias.html");
     ?>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="./css/main.css">
@@ -31,7 +45,7 @@
                 </li>
 			<li>
 					<a href="archivos_mostrar.php" class="btn-sideBar-SubMenu">
-						<i class="zmdi zmdi-view-dashboard zmdi-hc-fw"></i> ARCHIVOS (Solo Profesores) 
+						<i class="zmdi zmdi-layers"></i> ARCHIVOS (Solo Profesores) 
 					</a>
 
 				</li>
@@ -41,14 +55,12 @@
                     </a>
 
                 </li>
-                <li>
-                    <a href="login_profesores.php" class="btn-sideBar-SubMenu">
-                        <i class="zmdi zmdi-account zmdi-hc-fw"></i> INICIAR SESION
-                    </a>
-                    
-                </li>
-                
-                
+                				<li>
+					<a href="cerrar_sesion.php" class="btn-sideBar-SubMenu">
+						<i class="zmdi zmdi-close-circle"></i> CERRAR SESION 
+					</a>
+
+				</li>
             </ul>
         </div>
     </section>
@@ -117,7 +129,6 @@
 	
 	<button id="cargar" class="btn btn-info btn-raised btn-lg"><i class="zmdi zmdi-floppy"></i> Ingresar Archivo</button>
   </form>
-  <button formnovalidate onclick="location.href='archivos_mostrar.php'" class="btn btn-warning btn-raised btn-lg"><i class="zmdi zmdi-book"></i> Ver archivos subidos </button>
     </div>  <br><br>
     <!--====== Scripts -->
     <script src="./js/jquery-3.1.1.min.js"></script>

@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<title>Iniciar Sesion</title>
     <?php 
 include('librerias.html')
 ?>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="stylesheet" href="./css/main.css">
@@ -28,6 +30,7 @@ include('librerias.html')
 		<div class="form-group text-center">
 			<input type="submit" value="Iniciar Sesion" class="btn btn-raised btn-danger">
 		</div>
+<center><a class="btn btn-warning" href="index.php">Volver</a></center>
 	</form>
 	<!--====== Scripts -->
 	<script src="./js/jquery-3.1.1.min.js"></script>
