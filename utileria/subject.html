@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<title>Representative</title>
+	<title>Subject</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="stylesheet" href="./css/main.css">
@@ -37,7 +37,7 @@
 			<!-- SideBar Menu -->
 			<ul class="list-unstyled full-box dashboard-sideBar-Menu">
 				<li>
-					<a href="home.php">
+					<a href="index.php">
 						<i class="zmdi zmdi-view-dashboard zmdi-hc-fw"></i> Dashboard
 					</a>
 				</li>
@@ -135,7 +135,7 @@
 		<!-- Content page -->
 		<div class="container-fluid">
 			<div class="page-header">
-			  <h1 class="text-titles"><i class="zmdi zmdi-male-female zmdi-hc-fw"></i> Users <small>Representative</small></h1>
+			  <h1 class="text-titles"><i class="zmdi zmdi-book zmdi-hc-fw"></i> Administration <small>Subject</small></h1>
 			</div>
 			<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse voluptas reiciendis tempora voluptatum eius porro ipsa quae voluptates officiis sapiente sunt dolorem, velit quos a qui nobis sed, dignissimos possimus!</p>
 		</div>
@@ -153,34 +153,18 @@
 									<div class="col-xs-12 col-md-10 col-md-offset-1">
 									    <form action="">
 									    	<div class="form-group label-floating">
+											  <label class="control-label">Code</label>
+											  <input class="form-control" type="text">
+											</div>
+									    	<div class="form-group label-floating">
 											  <label class="control-label">Name</label>
 											  <input class="form-control" type="text">
 											</div>
-											<div class="form-group label-floating">
-											  <label class="control-label">Last Name</label>
-											  <input class="form-control" type="text">
-											</div>
-											<div class="form-group label-floating">
-											  <label class="control-label">Address</label>
-											  <textarea class="form-control"></textarea>
-											</div>
-											<div class="form-group label-floating">
-											  <label class="control-label">Email</label>
-											  <input class="form-control" type="text">
-											</div>
-											<div class="form-group label-floating">
-											  <label class="control-label">Phone</label>
-											  <input class="form-control" type="text">
-											</div>
-											<div class="form-group label-floating">
-											  <label class="control-label">Occupation</label>
-											  <input class="form-control" type="text">
-											</div>
 											<div class="form-group">
-										        <label class="control-label">Gender</label>
+										      <label class="control-label">Status</label>
 										        <select class="form-control">
-										          <option>Male</option>
-										          <option>Female</option>
+										          <option>Active</option>
+										          <option>Disable</option>
 										        </select>
 										    </div>
 										    <p class="text-center">
@@ -197,13 +181,9 @@
 									<thead>
 										<tr>
 											<th class="text-center">#</th>
+											<th class="text-center">Code</th>
 											<th class="text-center">Name</th>
-											<th class="text-center">Last Name</th>
-											<th class="text-center">Address</th>
-											<th class="text-center">Email</th>
-											<th class="text-center">Phone</th>
-											<th class="text-center">Occupation</th>
-											<th class="text-center">Gender</th>
+											<th class="text-center">Status</th>
 											<th class="text-center">Update</th>
 											<th class="text-center">Delete</th>
 										</tr>
@@ -211,75 +191,16 @@
 									<tbody>
 										<tr>
 											<td>1</td>
-											<td>Carlos</td>
-											<td>Alfaro</td>
-											<td>El Salvador</td>
-											<td>carlos@gmail.com</td>
-											<td>+50312345678</td>
-											<td>Web Developer</td>
-											<td>Male</td>
+											<td>100</td>
+											<td>Mathematics</td>
+											<td>Active</td>
 											<td><a href="#!" class="btn btn-success btn-raised btn-xs"><i class="zmdi zmdi-refresh"></i></a></td>
 											<td><a href="#!" class="btn btn-danger btn-raised btn-xs"><i class="zmdi zmdi-delete"></i></a></td>
 										</tr>
-										<tr>
-											<td>2</td>
-											<td>Alicia</td>
-											<td>Melendez</td>
-											<td>El Salvador</td>
-											<td>alicia@gmail.com</td>
-											<td>+50312345678</td>
-											<td>Social Work</td>
-											<td>Female</td>
-											<td><a href="#!" class="btn btn-success btn-raised btn-xs"><i class="zmdi zmdi-refresh"></i></a></td>
-											<td><a href="#!" class="btn btn-danger btn-raised btn-xs"><i class="zmdi zmdi-delete"></i></a></td>
-										</tr>
-										<tr>
-											<td>3</td>
-											<td>Sarai</td>
-											<td>Mercado</td>
-											<td>El Salvador</td>
-											<td>sarai@gmail.com</td>
-											<td>+50312345678</td>
-											<td>Lawyer</td>
-											<td>Female</td>
-											<td><a href="#!" class="btn btn-success btn-raised btn-xs"><i class="zmdi zmdi-refresh"></i></a></td>
-											<td><a href="#!" class="btn btn-danger btn-raised btn-xs"><i class="zmdi zmdi-delete"></i></a></td>
-										</tr>
-										<tr>
-											<td>4</td>
-											<td>Alba</td>
-											<td>Bonilla</td>
-											<td>El Salvador</td>
-											<td>alba@gmail.com</td>
-											<td>+50312345678</td>
-											<td>Designer</td>
-											<td>Female</td>
-											<td><a href="#!" class="btn btn-success btn-raised btn-xs"><i class="zmdi zmdi-refresh"></i></a></td>
-											<td><a href="#!" class="btn btn-danger btn-raised btn-xs"><i class="zmdi zmdi-delete"></i></a></td>
-										</tr>
-										<tr>
-											<td>5</td>
-											<td>Claudia</td>
-											<td>Rodriguez</td>
-											<td>El Salvador</td>
-											<td>claudia@gmail.com</td>
-											<td>+50312345678</td>
-											<td>Lawyer</td>
-											<td>Female</td>
-											<td><a href="#!" class="btn btn-success btn-raised btn-xs"><i class="zmdi zmdi-refresh"></i></a></td>
-											<td><a href="#!" class="btn btn-danger btn-raised btn-xs"><i class="zmdi zmdi-delete"></i></a></td>
-										</tr>
+										
 									</tbody>
 								</table>
-								<ul class="pagination pagination-sm">
-								  	<li class="disabled"><a href="#!">«</a></li>
-								  	<li class="active"><a href="#!">1</a></li>
-								  	<li><a href="#!">2</a></li>
-								  	<li><a href="#!">3</a></li>
-								  	<li><a href="#!">4</a></li>
-								  	<li><a href="#!">5</a></li>
-								  	<li><a href="#!">»</a></li>
-								</ul>
+								
 							</div>
 					  	</div>
 					</div>

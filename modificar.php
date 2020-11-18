@@ -23,7 +23,7 @@
             <!-- SideBar Menu -->
             <ul class="list-unstyled full-box dashboard-sideBar-Menu">
                 <li>
-                    <a href="home.php">
+                    <a href="index.php">
                         <i class="zmdi zmdi-balance zmdi-hc-fw"></i> INICIO
                     </a>
                 </li>
