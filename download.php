@@ -1,4 +1,4 @@
-<?phpinclude('conexion.php');
+<?php include('conexion.php');
 
 $qry = "SELECT * FROM archivos;
 
