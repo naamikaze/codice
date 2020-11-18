@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 15-11-2020 a las 22:02:32
+-- Tiempo de generación: 18-11-2020 a las 21:11:32
 -- Versión del servidor: 10.1.40-MariaDB
 -- Versión de PHP: 7.3.5
 
@@ -25,35 +25,6 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `alumnos`
---
-
-CREATE TABLE `alumnos` (
-  `pk_alumnos` int(11) NOT NULL,
-  `usuario` varchar(255) NOT NULL,
-  `contra` varchar(255) NOT NULL,
-  `nombre` varchar(255) NOT NULL,
-  `apellido` varchar(255) NOT NULL,
-  `dni` int(9) NOT NULL,
-  `fnacimiento` varchar(11) NOT NULL,
-  `fk_curso` smallint(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Volcado de datos para la tabla `alumnos`
---
-
-INSERT INTO `alumnos` (`pk_alumnos`, `usuario`, `contra`, `nombre`, `apellido`, `dni`, `fnacimiento`, `fk_curso`) VALUES
-(1, 'tumadre123', 'pipipopo', 'tumadre', 'jorgenitales', 0, '2020-09-20 ', 0),
-(2, 'tumadre123dsd', 'pipipopo123', 'tumadreaaa', 'jorgenitalesaa', 0, '2020-09-08 ', 0),
-(3, 'tumadre123dsd', '123123', 'tumadreaaa', 'jorgenitalesaa', 0, '2020-09-18 ', 0),
-(4, 'tumadre123dsd', '123123123', 'tumadreaaa', 'jorgenitalesaa', 0, '2020-09-18', 0),
-(5, 'dasdasdasd', 'asdasd', 'tumadreaaa', 'jorgenitalesaa', 123123, '2020-09-18', 0),
-(6, 'asd', '123', 'dasd', '123', 3333, '2020-09-10', 0);
-
--- --------------------------------------------------------
-
---
 -- Estructura de tabla para la tabla `archivos`
 --
 
@@ -65,47 +36,7 @@ CREATE TABLE `archivos` (
   `ruta` varchar(200) NOT NULL,
   `tipo` varchar(200) NOT NULL,
   `size` int(50) NOT NULL,
-  `fk_materia` smallint(11) NOT NULL,
-  `fk_curso` smallint(11) NOT NULL,
-  `fk_profesor` smallint(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Volcado de datos para la tabla `archivos`
---
-
-INSERT INTO `archivos` (`id`, `nombre`, `descripcion`, `archivo`, `ruta`, `tipo`, `size`, `fk_materia`, `fk_curso`, `fk_profesor`) VALUES
-(2, 'asddddd123', 'asdasdasdddd', '', '6a45066f341e3d70cda152b04669d1e7.jpg', 'image/jpeg', 24708, 1, 2, 0),
-(3, '123123', 'asdasdasdasd', '', '335.jpg', 'image/jpeg', 22594, 2, 3, 0),
-(6, '123', 'ddda', '', '2f7.jpg', 'image/jpeg', 28337, 1, 2, 0),
-(7, 'panuel noyero', 'asdasd', '', '928d8a9a57515320068a2c339e88fd28.jpg', 'image/jpeg', 32001, 1, 2, 0),
-(23, 'aa', '12', '', 'bfef025b4ac8392ffd58a5623f8cd273(1).gif', 'image/gif', 373309, 1, 2, 0),
-(25, 'aaa', '123d', '', 'SensoresÃ¡nalogos.rar', 'application/octet-stream', 1998641, 2, 2, 0),
-(29, 'holajoaco', 'aaaaaaaaaaaa', '', 'GyroP.png', 'image/png', 289529, 6, 0, 0);
-
--- --------------------------------------------------------
-
---
--- Estructura de tabla para la tabla `curso`
---
-
-CREATE TABLE `curso` (
-  `pk_curso` smallint(11) NOT NULL,
-  `curso` varchar(255) NOT NULL,
-  `fk_alumno` smallint(6) NOT NULL,
-  `fk_materia` smallint(6) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
--- --------------------------------------------------------
-
---
--- Estructura de tabla para la tabla `materias`
---
-
-CREATE TABLE `materias` (
-  `pk_materia` smallint(11) NOT NULL,
-  `materia` varchar(255) NOT NULL,
-  `fk_curso` smallint(6) NOT NULL
+  `fk_materia` smallint(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -137,28 +68,10 @@ INSERT INTO `profesores` (`pk_profesores`, `usuario`, `contra`, `nombre`, `apell
 --
 
 --
--- Indices de la tabla `alumnos`
---
-ALTER TABLE `alumnos`
-  ADD PRIMARY KEY (`pk_alumnos`);
-
---
 -- Indices de la tabla `archivos`
 --
 ALTER TABLE `archivos`
   ADD PRIMARY KEY (`id`);
-
---
--- Indices de la tabla `curso`
---
-ALTER TABLE `curso`
-  ADD PRIMARY KEY (`pk_curso`);
-
---
--- Indices de la tabla `materias`
---
-ALTER TABLE `materias`
-  ADD PRIMARY KEY (`pk_materia`);
 
 --
 -- Indices de la tabla `profesores`
@@ -171,28 +84,10 @@ ALTER TABLE `profesores`
 --
 
 --
--- AUTO_INCREMENT de la tabla `alumnos`
---
-ALTER TABLE `alumnos`
-  MODIFY `pk_alumnos` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
-
---
 -- AUTO_INCREMENT de la tabla `archivos`
 --
 ALTER TABLE `archivos`
-  MODIFY `id` smallint(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
-
---
--- AUTO_INCREMENT de la tabla `curso`
---
-ALTER TABLE `curso`
-  MODIFY `pk_curso` smallint(11) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT de la tabla `materias`
---
-ALTER TABLE `materias`
-  MODIFY `pk_materia` smallint(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` smallint(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT de la tabla `profesores`
